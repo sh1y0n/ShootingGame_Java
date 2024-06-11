@@ -83,6 +83,9 @@ public class MyFrame extends Frame implements Runnable {
 	 * @param w
 	 * @param h
 	 */
+        public synchronized void fillRect(double x, double y, double w, double h) {
+               fillRect((int) x, (int) y, (int) w, (int) h);
+        }
 	public synchronized void fillRect(int x,int y,int w, int h) {
 		Graphics g=getImageGraphics();
 		if (g!=null) {
