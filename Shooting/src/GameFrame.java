@@ -10,6 +10,12 @@ public void run() {
 		clear();
 	GameWorld.player.draw(this);
 	GameWorld.player.move();
+	movePlayerBullets();
+	
+	sleep(0.03);
+	}
+}
+public void movePlayerBullets() {
 	int i=0;
 	while(i<GameWorld.playerBullets.size()) {
 		PlayerBullet b=GameWorld.playerBullets.get(i);
@@ -24,7 +30,6 @@ public void run() {
 			i++;
 		}
 	}
-	sleep(0.03);
-}
+	
 }
 }
