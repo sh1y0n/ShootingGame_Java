@@ -7,7 +7,7 @@ public Character(double x, double y,double vx, double vy) {
 	this.vx =vx;
 	this.vy =vy;
 }
-public void main() {
+public void move() {
 	x+=vx;
 	y+=vy;
 }
