@@ -31,7 +31,9 @@ public void keyPressed(KeyEvent e) {
 		vx=5;
 	}
 	if(e.getKeyCode()==KeyEvent.VK_SPACE) {
-		GameWorld.playerBullets.add (new PlayerBullet(x,y,x+0,-10) );
+		GameWorld.playerBullets.add (new PlayerBullet(x,y,10,-10) );
+		GameWorld.playerBullets.add (new PlayerBullet(x,y,20,-10) );
+		GameWorld.playerBullets.add (new PlayerBullet(x,y,30,-10) );
 		System.out.println("弾の数＝"+ GameWorld.playerBullets.size());
 	}
 }
