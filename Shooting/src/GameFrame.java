@@ -24,7 +24,7 @@ public void run() {
 	public void moveEnemies() {
 		for(int i=0; i<GameWorld.enemies.size();i++) {
 			Enemy e=GameWorld.enemies.get(i);
-				e.draw(this);
+		    e.draw(this);
 			e.move();
 		}
 	
