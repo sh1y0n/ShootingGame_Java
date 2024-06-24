@@ -25,7 +25,7 @@ public void move ()
 		GameWorld.enemies.add(new RandomEnemy(x,y,0,1));
 	}
 	if(Math.random()<0.05) {
-		GameWorld.enemies.add(new DropEnemy(x,y,0,15));
+		GameWorld.enemies.add(new DropEnemy(x,y,0,5));
 	}
 	if(Math.random()<0.05) {
 		GameWorld.enemies.add(new CurveEnemy(x,y,0,4));
