@@ -6,4 +6,5 @@ static Vector<PlayerBullet> playerBullets;
 static Vector<Enemy> enemies;
 static boolean enterPressed;
 static int stage;
+static int score;
 }
