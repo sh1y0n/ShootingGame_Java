@@ -7,6 +7,7 @@ public void run()
 	
 	GameWorld.player=new Player(100,300,0,0);
 	addKeyListener(GameWorld.player);
+	GameWorld.stage=1;
 	while(true)
 	{
 		GameWorld.player.x=100;
@@ -22,6 +23,7 @@ public void run()
 		while(true)
 		{
 			clear();
+			drawString("Stage="+GameWorld.stage,300,50,15);
 			GameWorld.player.draw(this);
 			GameWorld.player.move();
 			movePlayerBullets();
@@ -36,6 +38,7 @@ public void run()
 				drawString("クリア！",100,200,40);
 				if(GameWorld.enterPressed)
 				{
+					GameWorld.stage++;
 					break;
 				}
 			}
@@ -45,6 +48,7 @@ public void run()
 				drawString("ゲームオーバー",50,200,40);
 				if(GameWorld.enterPressed)
 				{
+					GameWorld.stage=1;
 					break;
 				}
 			}
