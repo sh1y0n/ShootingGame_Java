@@ -28,6 +28,11 @@ if(GameWorld.enemies.size()==0)
 setColor(0,0,0);
 drawString("クリア！",100,200,40);
 }
+else if(GameWorld.player.y<0) 
+{
+setColor(0,0,0);
+drawString("ゲームーバー",50,200,40);
+}
 	sleep(0.03);
 	}
 }
