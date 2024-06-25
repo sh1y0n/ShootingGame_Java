@@ -29,7 +29,7 @@ checkPlayerBulletsAndEnemies();
  
 public boolean checkHit (Character a, Character b) 
 {
-	if (Math.abs(a.x-b.x)<=1 && Math.abs(a.y-b.y)<=1) 
+	if (Math.abs(a.x-b.x)<=30 && Math.abs(a.y-b.y)<=30) 
 	{
 		return true;
 	}
